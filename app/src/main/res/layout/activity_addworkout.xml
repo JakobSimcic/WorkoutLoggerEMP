@@ -2,20 +2,219 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddWorkoutActivity">
+    android:background="#121212">
 
     <TextView
-        android:id="@+id/tvAddWorkout"
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Tukaj bo add workout"
-        android:textSize="24sp"
+        android:layout_marginTop="32dp"
+        android:text="WORKOUT LOGGER"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/upperForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#1E1E1E"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/etWorkoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ime vadbe"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/etWorkoutDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Datum vadbe"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etWorkoutType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Katera vadba"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/detailsScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/upperForm"
+        app:layout_constraintBottom_toTopOf="@id/btnClock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 1 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 2 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 3 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 4 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 5 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 6 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 7 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 8 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 9 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vaja 10 - Podrobnosti"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/btnClock"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Clock Icon"
+        android:src="@drawable/ic_clock"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSaveWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shrani vadbo"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="138dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnWeights"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Weights Icon"
+        android:src="@drawable/ic_weights"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+

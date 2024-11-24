@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessTrackerEMP"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/rounded_edit_text" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,7 +26,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".AddWorkoutActivity" />
-        <activity android:name=".LogActivity" />
     </application>
 
 </manifest>
