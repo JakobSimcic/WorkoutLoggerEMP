@@ -57,7 +57,7 @@
             android:id="@+id/etWorkoutType"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Katera vadba"
+            android:hint="Kateri del telesa"
             android:background="@drawable/rounded_edit_text"
             android:padding="12dp"
             android:textColor="#FFFFFF"
